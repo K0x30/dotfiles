@@ -26,3 +26,5 @@
 #export PILOTRATE=115200
 
 test -s ~/.alias && . ~/.alias || true
+
+PS1='\[\e[1;32m\]\w\$ \[\e[m\]'
