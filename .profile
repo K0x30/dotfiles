@@ -28,3 +28,11 @@ test -z "$PROFILEREAD" && . /etc/profile || true
 #fi
 
 export LS_OPTIONS=
+
+DIR=`dirname $0`
+if [ x"$DIR" = x"/data/data/com.termux/files/usr/bin" ]; then
+  if [ -z "$TERMUX_CHROOT" ]; then
+    export TERMUX_CHROOT=done
+    termux-chroot
+  fi
+fi

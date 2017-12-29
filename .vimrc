@@ -5,6 +5,9 @@ syntax enable
 filetype plugin on
 filetype indent on
 
+set fileencoding=utf-8
+set encoding=utf-8
+
 " -----------------------------------------------------------------------------
 " [search]
 " 大文字小文字を区別しない

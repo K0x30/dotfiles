@@ -12,7 +12,7 @@
 
 # Some applications read the EDITOR variable to determine your favourite text
 # editor. So uncomment the line below and enter the editor of your choice :-)
-#export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim
 #export EDITOR=/usr/bin/mcedit
 
 # For some news readers it makes sense to specify the NEWSSERVER variable here
@@ -27,4 +27,5 @@
 
 test -s ~/.alias && . ~/.alias || true
 
-PS1='\[\e[1;32m\]\w\$ \[\e[m\]'
+#PS1='\[\e[1;32m\]\w\$ \[\e[m\]'
+PS1='\w\$ '
