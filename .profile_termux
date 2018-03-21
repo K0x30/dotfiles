@@ -1,0 +1,7 @@
+if ! pgrep proot > /dev/null; then
+  termux-chroot
+  exit 0
+elif ! pgrep tmux > /dev/null; then
+  tmux
+  exit 0
+fi
