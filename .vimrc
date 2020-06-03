@@ -22,6 +22,9 @@ set hlsearch
 set wrapscan
 set showmatch
 
+set list
+set listchars=tab:»\ 
+"listchars=tab:»-,trail:-,nbsp:%,eol:↲
 
 " -----------------------------------------------------------------------------
 " [indent]
@@ -33,7 +36,7 @@ set cinoptions+=:0,g0
 set smarttab
 set expandtab
 
-set tabstop=2
+set tabstop=4
 set softtabstop=2
 set shiftwidth=2
 set backspace=indent,eol,start
