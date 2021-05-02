@@ -8,6 +8,8 @@ filetype indent on
 set fileencoding=utf-8
 set encoding=utf-8
 
+" highlight StatusLine guifg=white guibg=darkgray
+
 " -----------------------------------------------------------------------------
 " [search]
 " 大文字小文字を区別しない
@@ -23,8 +25,10 @@ set wrapscan
 set showmatch
 
 set list
-set listchars=tab:»\ 
-"listchars=tab:»-,trail:-,nbsp:%,eol:↲
+"set listchars=tab:»\ 
+"set listchars=tab:▸\ 
+"set listchars=tab:»-,trail:-,nbsp:%,eol:↲
+set listchars=tab:»\ ,eol:↲
 
 " -----------------------------------------------------------------------------
 " [indent]
@@ -44,9 +48,10 @@ set backspace=indent,eol,start
 set formatoptions+=mM
 
 if has('autocmd')
-	autocmd FileType c   setlocal ts=4 sw=4 sts=4 et
-	autocmd FileType cpp setlocal ts=4 sw=4 sts=4 et
+  autocmd FileType c   setlocal ts=4 sw=4 sts=4 et
+  autocmd FileType cpp setlocal ts=4 sw=4 sts=4 et
   autocmd FileType sh  setlocal ts=2 sw=2 sts=2 et
+  autocmd FileType go setlocal ts=4 sw=4 sts=4 noet
   autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |

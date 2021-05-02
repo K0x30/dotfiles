@@ -114,4 +114,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+. $PREFIX/etc/bash_completion.d/git-completion.bash
+. $PREFIX/etc/bash_completion.d/git-prompt.sh
+PS1='\w$(__git_ps1)\$ '
 
